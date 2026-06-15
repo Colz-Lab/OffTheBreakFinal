@@ -1,0 +1,43 @@
+============================================
+===       Off The Break Paintball        ===
+============================================
+
+= = = Overview = = =
+
+============================================
+===     Individual Three Code Segments   ===
+============================================
+
+= = = Cole = = =
+
+Seg 1 - Play.java lines - Lines 1-60
+
+- I did have to research how to use an enumeration but the code is
+all done by myself. I picked this one because we had to deliberate
+and spent a solid amount of time determining which plays are good/bad
+against other plays.
+
+
+Seg 2 - PlayerPool.java - Lines 1-60
+
+- Nothing extravagant or very technical but we did want to make this a fantasy
+style game and you cant have that without real people. It took me some time but
+i found 30 players from this years Tampa Bay open and made up stats for all of them.
+
+
+Seg 3 - PLayer.java - lines 1-55
+
+- Basic abstract class that defines stats and has teh required getters and setters.
+
+==============================
+
+= = = Marcus = = =
+
+
+
+
+
+
+============================================
+===             Sorting                  ===
+============================================
