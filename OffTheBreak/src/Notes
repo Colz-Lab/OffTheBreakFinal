@@ -33,7 +33,22 @@ Seg 3 - PLayer.java - lines 1-55
 
 = = = Marcus = = =
 
+Seg 1 - Team.java -  lines - 1-124
 
+- I chose this class because it is the base for all teams in the game and stores shared
+data like roster, points, wins, and eliminations while using abstraction and Comparable so
+teams can have unique behaviors and be sorted by points for standings.
+
+Seg 2 - MatchEngine.java - Lines 1-120
+- I chose this class because it runs the main match simulation, including rounds, player
+duels, eliminations, and deciding both round and match winners. The most challenging part
+was balancing the combat system using player stats, randomness, and play multipliers so
+outcomes felt fair but still unpredictable.
+
+Seg 3 - FrontPlayer.java - Line 1-22
+- I chose this class because it defines the FrontPlayer role and overrides the overall rating
+so agility is weighted more heavily than gun skill (60/40 split), which matches how front players
+rely more on movement and positioning.
 
 
 
