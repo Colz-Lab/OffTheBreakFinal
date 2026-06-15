@@ -13,6 +13,12 @@ involve randomly selecting some sort of kill message based on the RNG and random
 names of current in play players to print along with them. The system was flawed and it didn't have
 the intended impact we wanted.
 
+
+MatchEngine.java
+
+- Apart from getting the match to actually run without having the ai teams bug out when they had to get some assistance
+working the actual commentary into the engine and getting it to print at the right times.
+
 ============================================
 ===     Individual Three Code Segments   ===
 ============================================
@@ -24,7 +30,7 @@ Seg 1 - Play.java lines - Lines 1-60
 - I did have to research how to use an enumeration but the code is
 all done by myself. I picked this one because we had to deliberate
 and spent a solid amount of time determining which plays are good/bad
-against other plays.
+against other plays and had to hard code those in.
 
 
 Seg 2 - PlayerPool.java - Lines 1-60
