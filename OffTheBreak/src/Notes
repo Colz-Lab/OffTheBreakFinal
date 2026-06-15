@@ -4,6 +4,15 @@
 
 = = = Overview = = =
 
+Personally Coded Segments are listed below. And assisted segments are listed here.
+
+Commentary.java
+
+- This class required a lot of addition coding support, our original commentary system was going to
+involve randomly selecting some sort of kill message based on the RNG and randomly selecting the
+names of current in play players to print along with them. The system was flawed and it didn't have
+the intended impact we wanted.
+
 ============================================
 ===     Individual Three Code Segments   ===
 ============================================
