@@ -3,9 +3,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 
-// HumanTeam extends Team
-// This is the team controlled by the person playing the game
-// It asks the player to make choices instead of deciding automatically
 public class HumanTeam extends Team {
 
     public HumanTeam(String name) {
@@ -17,8 +14,6 @@ public class HumanTeam extends Team {
         return true;
     }
 
-    // Shows the player a list of available players and lets them pick one
-    // The list is sorted by overall rating so the best players show at the top
     public Player chooseDraftPick(ArrayList<Player> available, Scanner scanner) {
 
         // Make a copy of the list so we can sort it without changing the original

@@ -1,19 +1,11 @@
-// MatchResult stores what happened in a match
-// It gets returned by MatchEngine after a match is finished
 public class MatchResult {
 
-    // Did team A win?
     public boolean teamAWon;
-
-    // How many eliminations did each team get
     public int eliminationsA;
     public int eliminationsB;
-
-    // How many rounds did each team win
     public int roundWinsA;
     public int roundWinsB;
 
-    // Constructor to set everything up
     public MatchResult(boolean teamAWon, int eliminationsA, int eliminationsB, int roundWinsA, int roundWinsB) {
         this.teamAWon = teamAWon;
         this.eliminationsA = eliminationsA;
@@ -22,7 +14,6 @@ public class MatchResult {
         this.roundWinsB = roundWinsB;
     }
 
-    // Calculates the total points team A earned from this match
     // Win = 5 points, each elimination = 2 points, each alive player at end = 1 point
     public int pointsForA(int rosterSize) {
         int totalPoints = 0;

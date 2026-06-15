@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// Main is the entry point for the whole program
-// It sets everything up and kicks off the game
 public class Main {
 
     public static void main(String[] args) {
@@ -15,7 +13,7 @@ public class Main {
         System.out.print("  Press ENTER to start...");
         scanner.nextLine();
 
-        // Generate the pool of 30 NXL players for the draft
+        // Make the pool of 30 players for the draft
         ArrayList<Player> playerPool = PlayerPool.generatePool();
 
         // Run the draft - this returns 4 teams with their rosters filled

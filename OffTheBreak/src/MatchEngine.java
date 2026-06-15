@@ -3,13 +3,10 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.Scanner;
 
-// MatchEngine handles all the combat simulation
-// It runs matches between two teams and figures out who wins each round and each match
 public class MatchEngine {
 
     private static Random random = new Random();
 
-    // Total number of rounds played per match
     private static int ROUNDS_PER_MATCH = 5;
 
     // Runs a full match between two teams
@@ -29,7 +26,6 @@ public class MatchEngine {
             System.out.println("  +--------------------------------------------+");
         }
 
-        // Play all 5 rounds
         for (int roundNumber = 1; roundNumber <= ROUNDS_PER_MATCH; roundNumber++) {
 
             // Reset everyone to alive at the start of each round

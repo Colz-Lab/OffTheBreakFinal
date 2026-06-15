@@ -1,8 +1,5 @@
-// This is the base class for all players in the game
-// It is abstract because we never create a plain Player, only FrontPlayer or BackPlayer
 public abstract class Player {
 
-    // Every player has these basic stats
     private String name;
     private String nickname;
     private String realTeam;
@@ -10,7 +7,6 @@ public abstract class Player {
     protected int agility;
     private boolean alive;
 
-    // Constructor that sets up a player with all their info
     public Player(String name, String nickname, String realTeam, int gunSkill, int agility) {
         this.name = name;
         this.nickname = nickname;
@@ -24,7 +20,7 @@ public abstract class Player {
     public abstract String getRoleLabel();
     public abstract int getOverall();
 
-    // Getters so other classes can read player info
+
     public String getName() {
         return name;
     }
@@ -52,6 +48,7 @@ public abstract class Player {
     public void setAlive(boolean alive) {
         this.alive = alive;
     }
+
 
     // Shows the player's info in a readable format when printed
     public String toString() {

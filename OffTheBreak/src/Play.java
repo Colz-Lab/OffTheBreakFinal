@@ -1,6 +1,7 @@
-// Play is an enum that holds all 6 possible plays a team can run each round
-// Each play has a name, a description, and a table of how well it does against each other play
 public enum Play {
+
+    // Play holds all 6 possible plays a team can run each round
+    // Each play has a name, a description, and a table of how well it does against each other play
 
     FULL_SEND(
         "FULL SEND",
@@ -38,12 +39,10 @@ public enum Play {
         new double[]{0.9, 1.2, 1.3, 0.7, 1.1, 1.0}
     );
 
-    // Each play stores these three things
     private String displayName;
     private String description;
     private double[] matchupMultipliers;
 
-    // Constructor for the enum
     Play(String displayName, String description, double[] matchupMultipliers) {
         this.displayName = displayName;
         this.description = description;
@@ -58,8 +57,6 @@ public enum Play {
         return description;
     }
 
-    // Returns how effective this play is against the opponent's play
-    // We use the opponent play's position in the enum (ordinal) to look up the multiplier
     public double getMultiplierAgainst(Play opponentPlay) {
         return matchupMultipliers[opponentPlay.ordinal()];
     }
