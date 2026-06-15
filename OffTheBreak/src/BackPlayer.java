@@ -1,6 +1,3 @@
-// BackPlayer extends Player
-// Back players are the shooters and laners on the team
-// Their overall rating cares more about gun skill than agility
 public class BackPlayer extends Player {
 
     // Constructor just passes everything up to the Player constructor
@@ -8,7 +5,6 @@ public class BackPlayer extends Player {
         super(name, nickname, realTeam, gunSkill, agility);
     }
 
-    // Back players are labeled as BACK in the draft list
     public String getRoleLabel() {
         return "BACK";
     }

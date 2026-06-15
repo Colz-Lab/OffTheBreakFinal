@@ -1,6 +1,5 @@
 import java.util.Random;
 
-// Commentary prints random paintball-style messages during matches
 // All the methods are static so we can call them without creating a Commentary object
 public class Commentary {
 

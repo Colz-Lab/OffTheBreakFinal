@@ -1,6 +1,3 @@
-// FrontPlayer extends Player
-// Front players are the movers and snake players on the team
-// Their overall rating cares more about agility than gun skill
 public class FrontPlayer extends Player {
 
     // Constructor just passes everything up to the Player constructor
@@ -8,7 +5,6 @@ public class FrontPlayer extends Player {
         super(name, nickname, realTeam, gunSkill, agility);
     }
 
-    // Front players are labeled as FRONT in the draft list
     public String getRoleLabel() {
         return "FRONT";
     }

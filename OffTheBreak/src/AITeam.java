@@ -4,12 +4,8 @@ import java.util.Comparator;
 import java.util.Random;
 import java.util.Scanner;
 
-// AITeam extends Team
-// This is a computer controlled team
-// It makes its own decisions without any input from the player
 public class AITeam extends Team {
 
-    // We need a Random object to make random decisions
     private Random random;
 
     public AITeam(String name) {

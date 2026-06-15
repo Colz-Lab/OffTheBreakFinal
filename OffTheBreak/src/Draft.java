@@ -1,16 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// Draft handles the round-by-round player draft at the start of the game
-// All 4 teams take turns picking players from the available pool
 public class Draft {
 
-    // The names of the three AI teams
     private static String CPU_TEAM_1 = "Houston Heat";
     private static String CPU_TEAM_2 = "Tampa Bay Damage";
     private static String CPU_TEAM_3 = "San Diego Dynasty";
 
-    // Runs the full draft and returns all 4 teams with their rosters filled
     public static ArrayList<Team> runDraft(Scanner scanner, ArrayList<Player> pool) {
 
         System.out.println();
@@ -20,29 +16,23 @@ public class Draft {
         System.out.println("  +-------------------------------------------+");
         System.out.println();
 
-        // Ask the player what they want to name their team
         System.out.print("  Enter your team name: ");
         String teamName = scanner.nextLine().trim();
         if (teamName.isEmpty()) {
             teamName = "My Team";
         }
 
-        // Create all 4 teams using the Team subclasses
-        // HumanTeam = the player, AITeam = computer controlled
         Team playerTeam = new HumanTeam(teamName);
         Team cpu1       = new AITeam(CPU_TEAM_1);
         Team cpu2       = new AITeam(CPU_TEAM_2);
         Team cpu3       = new AITeam(CPU_TEAM_3);
 
-        // Put all teams in a list in draft order
-        // The player always picks first, then the three AI teams
         ArrayList<Team> allTeams = new ArrayList<Team>();
         allTeams.add(playerTeam);
         allTeams.add(cpu1);
         allTeams.add(cpu2);
         allTeams.add(cpu3);
 
-        // The available pool starts as a copy of all 30 players
         ArrayList<Player> available = new ArrayList<Player>();
         for (int i = 0; i < pool.size(); i++) {
             available.add(pool.get(i));
