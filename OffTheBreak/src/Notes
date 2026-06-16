@@ -19,6 +19,11 @@ MatchEngine.java
 - Apart from getting the match to actually run without having the ai teams bug out when they had to get some assistance
 working the actual commentary into the engine and getting it to print at the right times.
 
+Input protection / validation
+
+- This was an improvement recommended by ai, i am familiar with coding input protection in python but i was not sure
+where to start with it in java. The issue with having hans play test your game is this is the first thing he checks.
+
 ============================================
 ===     Individual Three Code Segments   ===
 ============================================
@@ -69,3 +74,22 @@ rely more on movement and positioning.
 ============================================
 ===             Sorting                  ===
 ============================================
+
+We implemented sorting in this program with:
+
+1: Sorting the Standings by points.
+
+- After all preliminary matches have been played the ranking from 1-4 is sorted
+based on how many points were accumulated. This is important because it determines
+who the top 2 teams are and who moves on to the championship. This is done using
+bubble sort in the tournament class:
+
+for (int i = 0; i < standings.length - 1; i++) {
+    for (int j = 0; j < standings.length - 1 - i; j++) {
+        if (standings[j].getPoints() < standings[j + 1].getPoints()) {
+            Team temp = standings[j];
+            standings[j] = standings[j + 1];
+            standings[j + 1] = temp;
+        }
+    }
+}
